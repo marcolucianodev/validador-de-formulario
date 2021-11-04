@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="left-side bg-left-side">
+            <h1>Bem-Vindo!!!</h1>
+            <h2>Por favor faça login com suas informações</h2>
+            <button class="login">Fazer Login</button>
+        </div>
+        <div class="right-side">
+            <h1>Crie uma conta</h1>
+            <form action="POST" class="validator">
+
+                <label for="name">
+                    
+                    <input type="text" name="name" id="name" data-rules="required|min=2" placeholder="Seu nome">
+                </label>
+                <label for="email">
+                    
+                    <input type="email" name="email" id="email" data-rules="required|email" placeholder="Seu e-mail">
+                </label>
+                <label for="password">
+                    
+                    <input type="password" name="password" id="password" data-rules="required|min=4" placeholder="Sua senha">
+                </label>
+                <label>
+                    <input type="submit"  value="Cadastrar">
+                </label>
+
+            </form>
+            <div class="social">
+                <div class="google-area">
+                    <div class="icon"><img src="images/google.png" alt=""></div>
+                    <span>Faça login com o Google</span>
+                </div>
+                <div class="face-area">
+                    <div class="icon"><img src="images/facebook.png" alt=""></div>
+                    <span>Faça login com o Facebook</span>
+                </div>
+                <div class="linkedin-area">
+                    <div class="icon"><img src="images/linkedin.png" alt=""></div>
+                    <span>Faça login com o Linkedin</span>
+                </div>
+            </div>
+            <div class="attention-loguin">
+                Ja tem uma conta?<a href="">Faça o loguin</a>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
