@@ -62,13 +62,37 @@ body {
 button.login {
     z-index: 999;
     font-size: 17px;
-    font-weight: bold;
     border-radius: 30px;
     padding: 10px 50px;
     background-image: linear-gradient(to right, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95));
     color: #FFF;
-    border: 2px solid #FFF;
+    border: 1px solid #FFF;
     cursor: pointer;
+}
+
+.login-area {
+    z-index: 999;
+    display: flex;
+    margin-top: 20px;
+    display: none;
+    transition: all 1s;
+}
+
+form.hide-login {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+form.hide-login input {
+    width: 100%;
+    border: 1px solid #FFF;
+    color: #FFF;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;
+    background-color: transparent;
 }
 
 .left-side::before {

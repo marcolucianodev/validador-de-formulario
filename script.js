@@ -74,3 +74,10 @@ let validator = {
 
 let form = document.querySelector('.validator')
 form.addEventListener('submit', validator.handleSubmit)
+
+/*Hide Login*/
+const hide_Login = document.querySelector('.login')
+const login_area = document.querySelector('.login-area')
+hide_Login.addEventListener('click', () => {
+    login_area.style.display = 'block'
+})
