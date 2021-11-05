@@ -84,6 +84,21 @@ hide_login.addEventListener('click', () => {
     login_area.classList.toggle('login-area-show')
     if(login_area.classList.contains('login-area-show')) {
        hide_login.style.display = 'none'
+       hide_attention_login.style.display = 'none'
+    } else {
+        hide_login.textContent = 'Fazer Login'
+    }
+    
+})
+
+const hide_attention_login = document.querySelector('.attention-loguin')
+const hide_login_right = document.querySelector('.attention-loguin a')
+hide_login_right.addEventListener('click', (e) => {
+    login_area.classList.toggle('login-area-show')
+    e.preventDefault()
+    if(login_area.classList.contains('login-area-show')) {
+        hide_attention_login.style.display = 'none'
+        hide_login.style.display = 'none'
     } else {
         hide_login.textContent = 'Fazer Login'
     }
