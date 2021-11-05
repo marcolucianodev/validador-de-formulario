@@ -8,27 +8,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* .screen {
-    display: flex;
-    height: 100vh;
-}
- */
-
  .screen {
      display: grid;
      grid-template-columns: 2fr 1fr;
      height: 100vh;
  }
-
-/* .left-side {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('images/ilustration-dataCenter.jpeg');
-    background-position: center;
-    background-size: cover;
-} */
 
 .left-side {
     display: flex;
@@ -80,11 +64,13 @@ button.login {
     width: 100%;
     justify-content: center;
     flex-direction: column;
+    display: none;
 }
 
 .login-area-show {
     opacity: 1;
     transition: all 600ms;
+    display: block;
 }
 
 form.hide-login {
