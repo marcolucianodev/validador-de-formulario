@@ -75,9 +75,17 @@ let validator = {
 let form = document.querySelector('.validator')
 form.addEventListener('submit', validator.handleSubmit)
 
-/*Hide Login*/
-const hide_Login = document.querySelector('.login')
+
+
+/*Hide Login Área*/
+const hide_login = document.querySelector('.login')
 const login_area = document.querySelector('.login-area')
-hide_Login.addEventListener('click', () => {
-    login_area.style.display = 'block'
+hide_login.addEventListener('click', () => {
+    login_area.classList.toggle('login-area-show')
+    if(login_area.classList.contains('login-area-show')) {
+       hide_login.style.display = 'none'
+    } else {
+        hide_login.textContent = 'Fazer Login'
+    }
+    
 })
